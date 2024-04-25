@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1", viewport-fit="cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Frontend Mentor | Blog preview card</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link
@@ -17,7 +17,7 @@
       rel="stylesheet"
     />
     <style>
-      * {
+* {
         font-family: "Figtree", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
@@ -35,7 +35,7 @@
       }
 
       .container {
-        max-width: 25%;
+        max-width: 40%;
         min-height: 60vh;
         background-color: white;
         border-radius: 20px;
@@ -69,11 +69,11 @@
       }
 
       .lang {
-        color: #393737;
+        color: #A2A2A2;
       }
 
       .author {
-        width: 50%;
+        width:35%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -92,20 +92,51 @@
         text-align: center;
       }
 
-      @media screen and (max-width: 425px) {
-        .container{
-          max-width: 90%;
-          min-height: 80vh;
+      @media screen and (max-width: 320px) {
+        body {
+          padding: 20px;
+        }
+      
+        .container {
+          max-width: 100%;
+          min-height: 100%;
+        }
+      
+        .svg-div {
+          border-radius: 10px;
+        }
+      
+        .learning {
+          width: 50%;
+          font-size: 14px;
+        }
+      
+        .author {
+          width: 50%;
+        }
+      
+        .author img {
+          width: 20%;
+        }
+      
+        .author p {
+          font-size: 14px;
         }
       }
       
-      @media screen and (max-width: 1024px) {
+      @media screen and (max-width: 768px) {
         .container {
-          min-height: 40vh;
-          max-width: 40%;
+          max-width: 80%;
+          min-height: 50vh;
         }
       }
-
+      
+      @media screen and (min-width: 769px) and (max-width: 1024px) {
+        .container {
+          max-width: 60%;
+          min-height: 40vh;
+        }
+      }
     </style>
   </head>
 
